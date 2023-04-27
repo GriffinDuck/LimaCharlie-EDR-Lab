@@ -7,13 +7,15 @@ I simulated a real-life cyber attack scenario and tested the effectiveness of my
 
 To enhance the security of the victim machine, I installed LimaCharlie sensor and Sysmon, which helped me detect any potential attacks or security events. On the Ubuntu Server, I installed Silver C2, a command and control attack tool for Windows machines.
 
-To test my security measures, I executed the C2 attack and created detection rules to alert administrators of any suspicious activity. This lab project aimed to demonstrate the importance of having robust security measures in place to protect against cyber attacks.:
+To test my security measures, I executed the C2 attack and created detection rules to alert administrators of any suspicious activity. This lab project aimed to demonstrate the importance of having robust security measures in place to protect against cyber attacks.
 
-- SecurityEvent (Windows Event Logs)
-- Sysmon (Sysmon Event Logs)
-- SecurityAlert (Log Analytics Alerts Triggered)
-- SecurityIncident (Incidents created by Sentinel)
-- AzureNetworkAnalytics_CL (Malicious Flows allowed into our honeynet)
+
+The architecture of the project consists of the following components:
+
+- Virtual Box NatNetwork
+- Virtual Machines (1 windows, 1 linux)
+- LimaCharlieEDR
+- Silver C2 Server
 
 ## Architecture Before Hardening / Security Controls
 ![Architecture Diagram](https://i.imgur.com/aBDwnKb.jpg)
@@ -21,14 +23,8 @@ To test my security measures, I executed the C2 attack and created detection rul
 ## Architecture After Hardening / Security Controls
 ![Architecture Diagram](https://i.imgur.com/YQNa9Pp.jpg)
 
-The architecture of the mini honeynet in Azure consists of the following components:
 
-- Virtual Box NatNetwork
-- Virtual Machines (1 windows, 1 linux)
-- LimaCharlieEDR
-- Silver C2 Server
-- Azure Storage Account
-- Microsoft Sentinel
+
 
 For the "BEFORE" metrics, all resources were originally deployed, exposed to the internet. The Virtual Machines had both their Network Security Groups and built-in firewalls wide open, and all other resources are deployed with public endpoints visible to the Internet; aka, no use for Private Endpoints.
 
