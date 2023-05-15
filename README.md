@@ -71,6 +71,13 @@ We can see that there is a Network Connetion created and the file in question is
 
 Usually a next step would be gathering the hash of the file and running this through VirusTotal but when doing this, VirusTotal returns nothing. This indicates that the attacker crafted this file themselves.  
 
+## Back to Sliver-Server
+
+For attackers getting acess to more than one account is critical. A way to do this is gathering creditals from the file lsass.exe. This file holds usernames, passwords and security tokens.
+
+[lsass-dump](https://i.imgur.com/1TDbDT7.png)
+
+Running this command will copy the contents of the lsass file and dump it inside of the attackers host. 
 
 
 
