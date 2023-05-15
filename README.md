@@ -36,7 +36,7 @@ After downloading the implant we need to run the malicious file
 
 ![Excute](https://i.imgur.com/mkdYQkp.png)
 
-## After Implant is instvalled on Victum
+## After Implant is installed on Victum
 
 We can run some commands inside the sliver-server session itself. 
 
