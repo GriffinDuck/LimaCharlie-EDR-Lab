@@ -73,7 +73,7 @@ Usually a next step would be gathering the hash of the file and running this thr
 
 ## Back to Sliver-Server
 
-For attackers getting acess to more than one account is critical. A way to do this is gathering creditals from the file lsass.exe. This file holds usernames, passwords and security tokens.
+For attackers getting access to more than one account is critical. A way to do this is gathering creditals from the file lsass.exe. This file holds usernames, passwords and security tokens.
 
 ![lsass-dump](https://i.imgur.com/1TDbDT7.png)
 
