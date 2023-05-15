@@ -18,7 +18,7 @@ The architecture of the project consists of the following components:
 - LimaCharlieEDR
 - Silver C2 Server
 
-##Labbing
+## Labbing
 
 After environment is set up I created a implant on the Ubuntu server to install on to the Windows System
 
