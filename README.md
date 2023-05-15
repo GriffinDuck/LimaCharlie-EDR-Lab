@@ -63,5 +63,12 @@ After finding that process we can go see that this file location is inside the D
 
 ![filesystem](https://i.imgur.com/ksRCp3P.png)
 
+Now we are going to look at the timeline and go through and see what is going on when this file was installed. 
+
+![timeline](https://i.imgur.com/jYVSaNr.png)
+
+We can see that there is a Network Connetion created and the file in question is COMPLEX_BELL the malicious file. 
+
+
 
 
