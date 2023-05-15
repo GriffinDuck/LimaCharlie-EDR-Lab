@@ -71,13 +71,19 @@ We can see that there is a Network Connetion created and the file in question is
 
 Usually a next step would be gathering the hash of the file and running this through VirusTotal but when doing this, VirusTotal returns nothing. This indicates that the attacker crafted this file themselves.  
 
-## Back to Sliver-Server
+## Credential Grabbing
 
 For attackers getting access to more than one account is critical. A way to do this is gathering creditals from the file lsass.exe. This file holds usernames, passwords and security tokens.
 
 ![lsass-dump](https://i.imgur.com/1TDbDT7.png)
 
 Running this command will copy the contents of the lsass file and dump it inside of the attackers host. 
+
+To detect this method of Credential Grabbing we will write a detection rule to detect this technique. 
+
+In LimaCharlie we can enter this detection rule: 
+
+[lsass-detection-rule](https://i.imgur.com/6bDKczs.png)
 
 
 
