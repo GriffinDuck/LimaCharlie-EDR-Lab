@@ -36,3 +36,18 @@ After downloading the implant we need to run the malicious file
 
 ![Excute](https://i.imgur.com/mkdYQkp.png)
 
+## After Implant is installed on Victum
+
+We can run some commands inside the sliver-server session itself. 
+
+Jumping inside our our session we can run some commands to identify the device we are on.
+
+Whoami - Hostname
+
+Netstat - Network connections
+
+ps -T - Process Tree (sliver Highlights green its own files)
+![Tree](https://i.imgur.com/CfmWUyF.png)
+
+
+
