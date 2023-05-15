@@ -36,7 +36,7 @@ After downloading the implant we need to run the malicious file
 
 ![Excute](https://i.imgur.com/mkdYQkp.png)
 
-## After Implant is installed on Victum
+## After Implant is instvalled on Victum
 
 We can run some commands inside the sliver-server session itself. 
 
@@ -68,6 +68,8 @@ Now we are going to look at the timeline and go through and see what is going on
 ![timeline](https://i.imgur.com/jYVSaNr.png)
 
 We can see that there is a Network Connetion created and the file in question is COMPLEX_BELL the malicious file. 
+
+Usually a next step would be gathering the hash of the file and running this through VirusTotal but when doing this, VirusTotal returns nothing. This indicates that the attacker crafted this file themselves.  
 
 
 
