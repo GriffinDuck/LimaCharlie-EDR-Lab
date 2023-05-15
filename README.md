@@ -1,5 +1,5 @@
 # LimaCharlie-EDR-Lab
-![Cloud Honeynet / SOC](https://docs.google.com/drawings/d/e/2PACX-1vS4DWasb0miAml9MANbZ9o2KKG9e2_Ohyivg7mwwzNeJfEDl3tlScQMdg-8ntLGAg-eaEXZJ_FHlGjH/pub?w=1199&h=688)
+![Architecture](https://i.imgur.com/6mftsEk.jpg)
 
 ## Introduction
 
