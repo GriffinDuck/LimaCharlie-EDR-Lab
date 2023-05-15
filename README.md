@@ -83,7 +83,7 @@ To detect this method of Credential Grabbing we will write a detection rule to d
 
 In LimaCharlie we can enter this detection rule: 
 
-[lsass-detection-rule](https://i.imgur.com/6bDKczs.png)
+![lsass-detection-rule](https://i.imgur.com/6bDKczs.png)
 
 
 
