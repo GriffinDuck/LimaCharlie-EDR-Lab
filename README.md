@@ -59,3 +59,9 @@ First thing to look at is going to be the processes running. After looking aroun
 
 ![process](https://i.imgur.com/Pts6px0.png)
 
+After finding that process we can go see that this file location is inside the Downloads folder of a user called Victum so we can locate this inside the filesystem section of LimaCharlie
+
+![filesystem](https://i.imgur.com/ksRCp3P.png)
+
+
+
