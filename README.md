@@ -47,7 +47,15 @@ Whoami - Hostname
 Netstat - Network connections
 
 ps -T - Process Tree (sliver Highlights green its own files)
+
 ![Tree](https://i.imgur.com/CfmWUyF.png)
 
 
+## Inside LimaCharlie EDR
+
+After installing the malicious file we should be able to see this inside of our EDR soultion.
+
+First thing to look at is going to be the processes running. After looking around for some time we see this file that does not have a signature(yellow)
+
+![process](https://i.imgur.com/Pts6px0.png)
 
