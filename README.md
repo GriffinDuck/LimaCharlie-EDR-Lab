@@ -95,7 +95,7 @@ Now if we run the lsass dump command again
 
 We will be able to detect it inside of LimaCharlie
 
-[Lima-Detections](https://i.imgur.com/mCsvF9u.png)
+![Lima-Detections](https://i.imgur.com/mCsvF9u.png)
 
 
 
