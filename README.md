@@ -78,9 +78,9 @@ For attackers getting access to more than one account is critical. A way to do t
 
 To learn more about LSASS Credential Dumping refer to [Mitre](https://attack.mitre.org/techniques/T1003/001/)
 
-![lsass-dump](https://i.imgur.com/1TDbDT7.png)
-
 Running this command will copy the contents of the lsass file and dump it inside of the attackers host. 
+
+![lsass-dump](https://i.imgur.com/1TDbDT7.png)
 
 To detect this method of Credential Grabbing we will write a detection rule to detect this technique. 
 
@@ -88,7 +88,7 @@ In LimaCharlie we can enter this detection rule:
 
 ![lsass-detection-rule](https://i.imgur.com/6bDKczs.png)
 
-This rule will detect any interaction with the lsass file. So this could cause a lot of False Postives if administrators are using this file. But for this lab it is a good rule since we dont have any actual users. 
+This rule will detect any interaction with the lsass file, so this could cause a lot of False Postives if administrators are using this file. But for this lab it is a good rule since we dont have any actual users. 
 
 Now if we run the lsass dump command again
 
