@@ -5,7 +5,7 @@
 
 I simulated a real-life cyber attack scenario and tested the effectiveness of my security measures. I created two virtual machines on a NatNetwork: an Ubuntu Server acting as the attacker, and a Windows 11 machine as the victim.
 
-To enhance the security of the victim machine, I installed LimaCharlie sensor and Sysmon, which helped me detect any potential attacks or security events. On the Ubuntu Server, I installed Silver C2, a command and control attack tool for Windows machines.
+To enhance the security of the victim machine, I installed LimaCharlie sensor and Sysmon, which helped me detect any potential attacks or security events. On the Ubuntu Server, I installed [Sliver-Server C2](https://bishopfox.com/blog/sliver), a command and control attack tool. I will be conducting a Credial Gathering attack using LSASS.exe to extract usernames and passwords. 
 
 To test my security measures, I executed the C2 attack and created detection rules to alert administrators of any suspicious activity. This lab project aimed to demonstrate the importance of having robust security measures in place to protect against cyber attacks.
 
@@ -16,11 +16,15 @@ The architecture of the project consists of the following components:
 - Virtual Box NatNetwork
 - Virtual Machines (1 windows, 1 linux)
 - LimaCharlieEDR
-- Silver C2 Server
+- Silver Server
+
+## Information
+
+ is a open source alternative of Cobalt Strike. In this lab I will use it as C2(Command & Control) over http to inject a malicous file into a Windows Device.  
 
 ## Labbing
 
-After environment is set up I created a implant on the Ubuntu server to install on to the Windows System
+After environment is set up I created a Sliver-Server C2 implant on the Ubuntu server to install on to the Windows System
 
 ![Implant](https://i.imgur.com/LEP0qSk.png)
 
