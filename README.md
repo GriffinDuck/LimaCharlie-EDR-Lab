@@ -16,11 +16,7 @@ The architecture of the project consists of the following components:
 - Virtual Box NatNetwork
 - Virtual Machines (1 windows, 1 linux)
 - LimaCharlieEDR
-- Silver Server
-
-## Information
-
- is a open source alternative of Cobalt Strike. In this lab I will use it as C2(Command & Control) over http to inject a malicous file into a Windows Device.  
+- Silver Server 
 
 ## Labbing
 
