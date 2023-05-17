@@ -14,7 +14,8 @@ The architecture of the project consists of the following components:
 
 
 - Virtual Box NatNetwork
-- Virtual Machines (1 windows, 1 linux)
+- Virtual Machines 
+  + (1 windows, 1 linux)
 - LimaCharlieEDR
 - Silver Server 
 
