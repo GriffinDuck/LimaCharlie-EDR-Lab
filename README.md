@@ -89,4 +89,13 @@ In LimaCharlie we can enter this detection rule:
 
 This rule will detect any interaction with the lsass file. So this could cause a lot of False Postives if administrators are using this file. But for this lab it is a good rule since we dont have any actual users. 
 
+Now if we run the lsass dump command again
+
+![lsass-dump](https://i.imgur.com/1TDbDT7.png)
+
+We will be able to detect it inside of LimaCharlie
+
+[Lima-Detections](https://i.imgur.com/mCsvF9u.png)
+
+
 
