@@ -87,5 +87,6 @@ In LimaCharlie we can enter this detection rule:
 
 ![lsass-detection-rule](https://i.imgur.com/6bDKczs.png)
 
+This rule will detect any interaction with the lsass file. So this could cause a lot of False Postives if administrators are using this file. But for this lab it is a good rule since we dont have any actual users. 
 
 
