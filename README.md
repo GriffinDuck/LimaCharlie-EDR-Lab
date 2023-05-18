@@ -122,7 +122,7 @@ Throughout the simulation, various stages of incident response were executed. Af
 
 Eradication steps were then taken to remove the attacker's foothold. Depending on the setup, the affected device could be restored to a known good snapshot in the case of a virtual machine or the malicious file could be deleted through LimaCharlie's filesystem section. Thorough examination of logs and detections ensured that no other malware or attacks were present on the device.
 
-Given that the attack involved credential gathering, additional measures were taken to enhance account security. Passwords for affected accounts were changed, multi-factor authentication (MFA) was implemented.
+Given that the attack involved credential gathering, additional measures were taken to enhance account security. Passwords for affected accounts were changed, multi-factor authentication (MFA) should be implemented for real-world scenarios.
 
 Through the execution of this simulated cyber attack and the implementation of appropriate incident response procedures. This project showcased the importance of promptly identifying and containing attacks, eradicating malicious elements, and fortifying account security to protect against cyber threats.
 
