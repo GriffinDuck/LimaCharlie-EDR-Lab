@@ -24,7 +24,7 @@ After environment is set up I created a Sliver-Server C2 implant on the Ubuntu s
 
 ![Implant](https://i.imgur.com/LEP0qSk.png)
 
-Next I created quick websever on the Ubuntu machine for the C2 Payload to be installed from, then I ran this command on the Windows device.
+Next I created quick websever on the Ubuntu machine for the C2 Payload to be installed from, then I ran this powershell command on the Windows device.
 
 ![IWR](https://i.imgur.com/dadsDeX.png)
 
