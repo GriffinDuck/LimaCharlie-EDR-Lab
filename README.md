@@ -97,20 +97,41 @@ Once the detection rule is implemented in LimaCharlie, running the LSASS dump co
 
 ## Containment & Eradication
 
-First we need to identify if this attack took place on other devices inside the network. Since this lab only has one VM we know that there is only one. Next we should isolate this device from our network to ensure that this attacker can't move around or futher attack our internal network.
+After identifying an attack on a device within the network, it is crucial to quickly implement containment and eradication steps to minimize further damage and prevent the attacker from expanding their reach.
+
+Containment:
+    The first step is to assess whether the attack has affected other devices within the network. In the case of this lab scenario, where only one virtual machine (VM) is present, it can be determined that the attack is limited to this single device. However, in a larger network, it is crucial to identify and isolate any compromised devices promptly. Isolating the affected device from the network ensures that the attacker cannot move laterally or launch further attacks on the internal network.
 
 ![isolate](https://i.imgur.com/E3bqXh9.png)
 
-Then we can either return to a known good snapshot if this is a Virtual Machine. We can also delete the file inside LimaCharlie by going into the filesystem section and finding the malicous file. We will also need to inspect other logs and detections to ensure that no other attacks or malware took place on this device before we put it back on the network. 
+ Eradication:
+    Once the affected device is isolated, eradication steps can be initiated. If the compromised device is a virtual machine, returning it to a known good snapshot can effectively remove any malicious changes made during the attack. Alternatively, in the LimaCharlie EDR platform, the malicious file can be identified and deleted from the filesystem section. It is also important to conduct a thorough examination of logs and detections to ensure that no other malware or attacks have occurred on the device.
+    
+![filesystem](https://i.imgur.com/ksRCp3P.png)
 
-The most important part, since this attack was stealing credientials, we need to change passwords, implement MFA and maybe change usernames to ensure the attacker cannot login to other devices or accounts. 
+ Password and Account Security:
+    Given that the attack involved credential theft, it is crucial to address potential access risks. Changing passwords for all affected accounts is paramount to prevent unauthorized access. Additionally, implementing multi-factor authentication (MFA) can significantly enhance the security of user accounts.
+
+By promptly containing the attack, eradicating any traces of compromise, and reinforcing password and account security measures, the incident response team can effectively mitigate the impact of the attack and protect the network from further exploitation. These containment and eradication steps are essential components of a comprehensive incident response plan that aims to minimize the attacker's foothold and restore the network's security posture.
 
 ## Conclusion
 
+In conclusion, this project simulated a real-life cyber attack scenario to evaluate the effectiveness of implemented security measures and demonstrate the importance of robust incident response procedures.
 
+To set up the environment, a network was established with an Ubuntu Server acting as the attacker and a Windows 11 machine as the victim. LimaCharlie sensor and Sysmon were deployed on the victim machine to enhance security monitoring, while Sliver-Server C2 was installed on the Ubuntu Server for conducting controlled attacks.
+
+Throughout the simulation, various stages of incident response were executed. After identifying the attack's occurrence on the victim machine, containment measures were implemented to prevent further spread within the network. In this lab scenario with a single VM, the isolation of the affected device was straightforward. However, in larger networks, promptly identifying and isolating compromised devices is essential to contain the attacker's movement and limit potential damage to the internal network.
+
+Eradication steps were then taken to remove the attacker's foothold. Depending on the setup, the affected device could be restored to a known good snapshot in the case of a virtual machine or the malicious file could be deleted through LimaCharlie's filesystem section. Thorough examination of logs and detections ensured that no other malware or attacks were present on the device.
+
+Given that the attack involved credential gathering, additional measures were taken to enhance account security. Passwords for affected accounts were changed, multi-factor authentication (MFA) was implemented.
+
+Through the execution of this simulated cyber attack and the implementation of appropriate incident response procedures. This project showcased the importance of promptly identifying and containing attacks, eradicating malicious elements, and fortifying account security to protect against cyber threats.
 
 ## Credit
 
-This project was based on a blog post by [Eric Capuano](https://blog.ecapuano.com/p/so-you-want-to-be-a-soc-analyst-intro?sd=pf) 
+This project was based on a blog post by [Eric Capuano](https://blog.ecapuano.com/p/so-you-want-to-be-a-soc-analyst-intro?sd=pf) and Video by [Gerald Auger](https://www.youtube.com/watch?v=oOzihldLz7U&list=PL4Q-ttyNIRApvPC_QVW9gcKHzjvMrzSCy&index=4)
+
+This Project is for educational use only.
 
 
