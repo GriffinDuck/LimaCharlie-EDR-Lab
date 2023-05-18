@@ -3,20 +3,19 @@
 
 ## Introduction
 
-I simulated a real-life cyber attack scenario and tested the effectiveness of my security measures. I created two virtual machines on a NatNetwork: an Ubuntu Server acting as the attacker, and a Windows 11 machine as the victim.
+In this project, I conducted a simulated real-life cyber attack scenario to evaluate the effectiveness of my security measures. To set up the environment, I created two virtual machines on a NatNetwork: an Ubuntu Server acting as the attacker and a Windows 11 machine as the victim.
 
-To enhance the security of the victim machine, I installed LimaCharlie sensor and Sysmon, which helped me detect any potential attacks or security events. On the Ubuntu Server, I installed [Sliver-Server C2](https://bishopfox.com/blog/sliver), a command and control attack tool. I will be conducting a Credential Gathering attack using LSASS.exe to extract usernames and passwords. 
+To bolster the security of the victim machine, I implemented a LimaCharlie sensor and Sysmon, which proved invaluable in detecting potential attacks and security events. Additionally, on the Ubuntu Server, I installed [Sliver-Server C2](https://bishopfox.com/blog/sliver), a command and control attack tool. The primary focus of the attack was a Credential Gathering technique utilizing LSASS.exe to extract usernames and passwords.
 
-To test my security measures, I executed the C2 attack and created detection rules to alert administrators of any suspicious activity. This lab project aimed to demonstrate the importance of having robust security measures in place to protect against cyber attacks.
+I executed the C2 attack while simultaneously developing detection rules to promptly alert administrators of any suspicious activities. The main objective of this lab project was to highlight the significance of robust security measures in safeguarding against cyber attacks.
 
 The Technologies and Tools used during this project:
 
-* Virtual Box NatNetwork
-* Virtual Machines 
-  + Windows 11
-  + Ubuntu Server 22.04
-* LimaCharlieEDR
-* Silver Server 
+* Virtual Box NatNetwork: Used to create the virtualized network environment.
+* Virtual Machines: Windows 11 and Ubuntu Server 22.04 virtual machines were employed to simulate the victim and attacker systems.
+* LimaCharlieEDR: Deployed as an endpoint detection and response (EDR) solution on the victim machine to enhance security monitoring and threat detection capabilities.
+* Sliver-Server: Installed on the Ubuntu Server as a command and control (C2) attack tool to enable remote control and further exploitation.
+ 
 
 ## Labbing
 
