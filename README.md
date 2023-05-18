@@ -97,15 +97,15 @@ We will be able to detect it inside of LimaCharlie
 
 ![Lima-Detections](https://i.imgur.com/mCsvF9u.png)
 
-## Containment
+## Containment & Eradication
 
 First we need to identify if this attack took place on other devices inside the network. Since this lab only has one VM we know that there is only one. Next we should isolate this device from our network to ensure that this attacker can't move around or futher attack our internal network.
 
-[isolate](https://i.imgur.com/E3bqXh9.png)
+![isolate](https://i.imgur.com/E3bqXh9.png)
 
-Then we can either return to a known good snapshot if this is a Virtual Machine or we can delete the file and ensure that the device is in a healthy state. 
+Then we can either return to a known good snapshot if this is a Virtual Machine. We can also delete the file inside LimaCharlie by going into the filesystem section and finding the malicous file. We will also need to inspect other logs and detections to ensure that no other attacks or malware took place on this device before we put it back on the network. 
 
-The most important part is we need to change passwords, implement MFA and maybe change hostnames to ensure the attacker cannott login to other devices or accounts. 
+The most important part, since this attack was stealing credientials, we need to change passwords, implement MFA and maybe change usernames to ensure the attacker cannot login to other devices or accounts. 
 
 ## Conclusion
 
