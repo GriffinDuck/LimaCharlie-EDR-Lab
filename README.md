@@ -61,20 +61,19 @@ ps -T - Process Tree (Sliver highlights its own files green )
 
 After successfully installing the malicious file, it is important to leverage the capabilities of our EDR (Endpoint Detection and Response) solution to gain visibility into the compromised system. Here's what can be done using the EDR solution:
 
-    Processes Analysis: Begin by examining the running processes on the compromised system. Look for any suspicious or unfamiliar processes. During the investigation, an unsigned file is discovered, highlighted in yellow, indicating a potentially malicious presence.
+Processes Analysis: Begin by examining the running processes on the compromised system. Look for any suspicious or unfamiliar processes. During the investigation, an unsigned file is discovered, highlighted in yellow, indicating a potentially malicious presence.
     
 ![process](https://i.imgur.com/Pts6px0.png)
 
-    File Location and LimaCharlie Filesystem Section: Upon identifying the suspicious process, investigate further to determine its file location. In this case, it is found within the Downloads folder of a user named "Victum." To gain more insights, access the LimaCharlie filesystem section to locate and analyze the identified file.
+File Location and LimaCharlie Filesystem Section: Upon identifying the suspicious process, investigate further to determine its file location. In this case, it is found within the Downloads folder of a user named "Victum." To gain more insights, access the LimaCharlie filesystem section to locate and analyze the identified file.
     
 ![filesystem](https://i.imgur.com/ksRCp3P.png)
 
-    Timeline Analysis: Shift focus to the timeline of events surrounding the installation of the malicious file. Explore the activities leading up to and following the installation to identify any relevant indicators of compromise (IOCs) or suspicious behavior. During this analysis, a network connection is observed, and it is found that the file of concern is named "COMPLEX_BELL."
+Timeline Analysis: Shift focus to the timeline of events surrounding the installation of the malicious file. Explore the activities leading up to and following the installation to identify any relevant indicators of compromise (IOCs) or suspicious behavior. During this analysis, a network connection is observed, and it is found that the file of concern is named "COMPLEX_BELL."
 
 ![timeline](https://i.imgur.com/jYVSaNr.png)
 
-
-    Hash Analysis with VirusTotal: Proceed with gathering the hash of the suspicious file and conduct a lookup using VirusTotal, a popular online threat intelligence platform. However, when querying VirusTotal with the file's hash, no results are returned. This lack of detection suggests that the attacker likely crafted the file themselves, evading traditional signature-based antivirus detection.
+Hash Analysis with VirusTotal: Proceed with gathering the hash of the suspicious file and conduct a lookup using VirusTotal, a popular online threat intelligence platform. However, when querying VirusTotal with the file's hash, no results are returned. This lack of detection suggests that the attacker likely crafted the file themselves, evading traditional signature-based antivirus detection.
 
 
 ## Credential Gathering
