@@ -78,29 +78,26 @@ Hash Analysis with VirusTotal: Proceed with gathering the hash of the suspicious
 
 ## Credential Gathering
 
-For attackers getting access to more than one account is critical. A way to do this is gathering creditals from the file lsass.exe. This file holds usernames, passwords and security tokens.
+One of the critical objectives for attackers is gaining access to multiple user accounts. A common technique used to achieve this is by extracting credentials from the LSASS.exe file, which contains usernames, passwords, and security tokens.
 
-To learn more about LSASS Credential Gathering refer to [Mitre](https://attack.mitre.org/techniques/T1003/001/)
+To understand LSASS Credential Gathering in more detail, you can refer to the documentation provided by [Mitre](https://attack.mitre.org/techniques/T1003/001/).
 
-Running this command will copy the contents of the lsass file and dump it inside of the attackers host. 
+Attackers typically run a command to copy the contents of the LSASS file and dump it onto their own host, enabling them to extract and analyze the gathered credentials.
 
 ![lsass-dump](https://i.imgur.com/1TDbDT7.png)
 
-To detect this method of Credential Gathering we will write a detection rule to detect this technique. 
-
-In LimaCharlie we can enter this detection rule: 
+To detect this specific method of Credential Gathering, we can create a detection rule in LimaCharlie. The rule will be designed to identify any interaction with the LSASS file. However, it is important to note that this detection rule may generate false positives if administrators are legitimately accessing the LSASS file for administrative purposes. In a lab scenario like this, where there are no actual users, this rule is suitable for detecting the LSASS dump command.
 
 ![lsass-detection-rule](https://i.imgur.com/6bDKczs.png)
 
-This rule will detect any interaction with the lsass file, so this could cause a lot of False Postives if administrators are using this file. But for this lab it is a good rule since we dont have any actual users. 
 
-Now if we run the lsass dump command again
+Once the detection rule is implemented in LimaCharlie, running the LSASS dump command again will trigger the detection within the LimaCharlie system. The detection event will provide visibility into the unauthorized LSASS file access, allowing security analysts to investigate and respond to the potential credential gathering activity.
 
 ![lsass-dump](https://i.imgur.com/1TDbDT7.png)
 
-We will be able to detect it inside of LimaCharlie
 
 ![Lima-Detections](https://i.imgur.com/mCsvF9u.png)
+
 
 ## Containment & Eradication
 
