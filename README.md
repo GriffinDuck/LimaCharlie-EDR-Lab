@@ -93,9 +93,6 @@ To detect this specific method of Credential Gathering, we can create a detectio
 
 Once the detection rule is implemented in LimaCharlie, running the LSASS dump command again will trigger the detection within the LimaCharlie system. The detection event will provide visibility into the unauthorized LSASS file access, allowing security analysts to investigate and respond to the potential credential gathering activity.
 
-![lsass-dump](https://i.imgur.com/1TDbDT7.png)
-
-
 ![Lima-Detections](https://i.imgur.com/mCsvF9u.png)
 
 
