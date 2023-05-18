@@ -40,17 +40,19 @@ Once the C2 implant is successfully downloaded onto the Windows device, the next
 
 ![Excute](https://i.imgur.com/mkdYQkp.png)
 
-## After Implant is installed on Victum
+## Excuting Commands on Victum Device
 
-We can run some commands inside the sliver-server session itself. 
+Once inside the Sliver-Server session, we have the ability to run commands and gather information about the compromised device. Here are some commands that can be executed within the Sliver-Server session to identify the device:
 
-Jumping inside our our session we can run some commands to identify the device we are on.
+![Session](https://i.imgur.com/4SE5ZEE.png)
 
 Whoami - Hostname
 
+PWD - Print Working Directory
+
 Netstat - Network connections
 
-ps -T - Process Tree (sliver Highlights green its own files)
+ps -T - Process Tree (Sliver highlights its own files green )
 
 ![Tree](https://i.imgur.com/CfmWUyF.png)
 
