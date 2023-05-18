@@ -112,8 +112,6 @@ Containment:
  Password and Account Security:
     Given that the attack involved credential theft, it is crucial to address potential access risks. Changing passwords for all affected accounts is paramount to prevent unauthorized access. Additionally, implementing multi-factor authentication (MFA) can significantly enhance the security of user accounts.
 
-By promptly containing the attack, eradicating any traces of compromise, and reinforcing password and account security measures, the incident response team can effectively mitigate the impact of the attack and protect the network from further exploitation. These containment and eradication steps are essential components of a comprehensive incident response plan that aims to minimize the attacker's foothold and restore the network's security posture.
-
 ## Conclusion
 
 In conclusion, this project simulated a real-life cyber attack scenario to evaluate the effectiveness of implemented security measures and demonstrate the importance of robust incident response procedures.
