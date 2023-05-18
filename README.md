@@ -39,7 +39,7 @@ Once the C2 implant is successfully downloaded onto the Windows device, the next
 
 ![Excute](https://i.imgur.com/mkdYQkp.png)
 
-## Excuting Commands on Victum Device
+## Excuting Commands on Victim Device
 
 Once inside the Sliver-Server session, we have the ability to run commands and gather information about the compromised device. Here are some commands that can be executed within the Sliver-Server session to identify the device:
 
@@ -64,7 +64,7 @@ Processes Analysis: Begin by examining the running processes on the compromised 
     
 ![process](https://i.imgur.com/Pts6px0.png)
 
-File Location and LimaCharlie Filesystem Section: Upon identifying the suspicious process, investigate further to determine its file location. In this case, it is found within the Downloads folder of a user named "Victum." To gain more insights, access the LimaCharlie filesystem section to locate and analyze the identified file.
+File Location and LimaCharlie Filesystem Section: Upon identifying the suspicious process, investigate further to determine its file location. In this case, it is found within the Downloads folder of a user named "Victim." To gain more insights, access the LimaCharlie filesystem section to locate and analyze the identified file.
     
 ![filesystem](https://i.imgur.com/ksRCp3P.png)
 
