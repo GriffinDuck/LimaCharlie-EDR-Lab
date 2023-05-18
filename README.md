@@ -39,7 +39,7 @@ Once the C2 implant is successfully downloaded onto the Windows device, the next
 
 ![Excute](https://i.imgur.com/mkdYQkp.png)
 
-## Excuting Commands on Victim Device
+## Executing Commands on Victim Device
 
 Once inside the Sliver-Server session, we have the ability to run commands and gather information about the compromised device. Here are some commands that can be executed within the Sliver-Server session to identify the device:
 
