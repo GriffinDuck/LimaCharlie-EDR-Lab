@@ -59,23 +59,23 @@ ps -T - Process Tree (Sliver highlights its own files green )
 
 ## Inside LimaCharlie EDR
 
-After installing the malicious file we should be able to see this inside of our EDR soultion.
+After successfully installing the malicious file, it is important to leverage the capabilities of our EDR (Endpoint Detection and Response) solution to gain visibility into the compromised system. Here's what can be done using the EDR solution:
 
-First thing to look at is going to be the processes running. After looking around for some time we see this file that does not have a signature(yellow)
-
+    Processes Analysis: Begin by examining the running processes on the compromised system. Look for any suspicious or unfamiliar processes. During the investigation, an unsigned file is discovered, highlighted in yellow, indicating a potentially malicious presence.
+    
 ![process](https://i.imgur.com/Pts6px0.png)
 
-After finding that process we can go see that this file location is inside the Downloads folder of a user called Victum so we can locate this inside the filesystem section of LimaCharlie
-
+    File Location and LimaCharlie Filesystem Section: Upon identifying the suspicious process, investigate further to determine its file location. In this case, it is found within the Downloads folder of a user named "Victum." To gain more insights, access the LimaCharlie filesystem section to locate and analyze the identified file.
+    
 ![filesystem](https://i.imgur.com/ksRCp3P.png)
 
-Now we are going to look at the timeline and go through and see what is going on when this file was installed. 
+    Timeline Analysis: Shift focus to the timeline of events surrounding the installation of the malicious file. Explore the activities leading up to and following the installation to identify any relevant indicators of compromise (IOCs) or suspicious behavior. During this analysis, a network connection is observed, and it is found that the file of concern is named "COMPLEX_BELL."
 
 ![timeline](https://i.imgur.com/jYVSaNr.png)
 
-We can see that there is a Network Connetion created and the file in question is COMPLEX_BELL the malicious file. 
 
-Usually a next step would be gathering the hash of the file and running this through VirusTotal but when doing this, VirusTotal returns nothing. This indicates that the attacker crafted this file themselves.  
+    Hash Analysis with VirusTotal: Proceed with gathering the hash of the suspicious file and conduct a lookup using VirusTotal, a popular online threat intelligence platform. However, when querying VirusTotal with the file's hash, no results are returned. This lack of detection suggests that the attacker likely crafted the file themselves, evading traditional signature-based antivirus detection.
+
 
 ## Credential Gathering
 
